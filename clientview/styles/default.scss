@@ -1,0 +1,68 @@
+// Probably pointless as the background will only be for body as far as I know
+$base-color: #333333;
+$borders: lighten($base-color, 3%);//#454545;
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: $base-color;
+    font-family: lato, sans-serif; font-size:16px;
+    color: white;
+
+    -webkit-user-select: none;
+
+    // Seems a lot of people use something such as a div to contain all but why do that when you can do this?
+    display: flex;
+    flex-flow: column;
+}
+
+$topBarHeight: 30px;
+
+.dragBar{
+    //display: flex;
+    height: $topBarHeight;
+    background: $borders;
+    //border-bottom: solid 2px $borders;
+    -webkit-app-region: drag;
+    width: 100%;
+    //justify-content: flex-end;
+}
+
+#close{
+    background-image: url(../images/icons/close.svg);
+}
+
+#mini{
+    background-image: url(../images/icons/minimize.svg);
+}
+
+.topBarButtons{
+    float: right;
+    display: inline-block;
+    height: $topBarHeight;
+    width: $topBarHeight;
+    -webkit-user-select: none;
+    -webkit-app-region: no-drag;
+    background: $borders center;
+    background-size: contain;
+    cursor: pointer;
+    //transition: background-color 0.3s;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    &:hover{
+        opacity: 1;
+        //background-color: #6c6c6c;
+    }
+}
+
+#windowCont{
+    /*display: flex;
+    flex-flow: column;*/
+    flex: 1 1 auto;
+    position: relative;
+    overflow: hidden;
+}
+// Used for identifying a div and it's area.
+.highlight{
+    background: #880000 !important;
+}

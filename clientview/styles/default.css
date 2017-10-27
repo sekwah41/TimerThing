@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #333333;
+  font-family: lato, sans-serif;
+  font-size: 16px;
+  color: white;
+  -webkit-user-select: none;
+  display: flex;
+  flex-flow: column; }
+
+.dragBar {
+  height: 30px;
+  background: #3b3b3b;
+  -webkit-app-region: drag;
+  width: 100%; }
+
+#close {
+  background-image: url(../images/icons/close.svg); }
+
+#mini {
+  background-image: url(../images/icons/minimize.svg); }
+
+.topBarButtons {
+  float: right;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  -webkit-user-select: none;
+  -webkit-app-region: no-drag;
+  background: #3b3b3b center;
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s; }
+  .topBarButtons:hover {
+    opacity: 1; }
+
+#windowCont {
+  /*display: flex;
+  flex-flow: column;*/
+  flex: 1 1 auto;
+  position: relative;
+  overflow: hidden; }
+
+.highlight {
+  background: #880000 !important; }
+
+/*# sourceMappingURL=default.css.map */

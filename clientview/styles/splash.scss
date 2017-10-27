@@ -1,0 +1,60 @@
+$base-color: #333333;
+
+#navBar{
+  height: 30px;
+}
+.fourButtonChoice{
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+
+  background: #555500;
+}
+
+#windowCont{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+
+.fourButtonChoice{
+  position: relative;
+}
+
+// 50% height does not work.
+.choice{
+  position: absolute;
+  background: $base-color;
+  &:hover{
+    background: darken($base-color, 4%);
+  }
+  &:active{
+    background: darken($base-color, 8%);
+  }
+}
+
+.choice1{
+  top:0;
+  left:0;
+  right: 50%;
+  bottom: 50%;
+}
+
+.choice2{
+  top:0;
+  left: 50%;
+  right: 0;
+  bottom: 50%;
+}
+.choice3{
+  top:50%;
+  left:0;
+  right: 50%;
+  bottom: 0;
+}
+.choice4{
+  top:50%;
+  left:50%;
+  right: 0;
+  bottom: 0;
+}

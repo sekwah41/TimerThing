@@ -1,0 +1,50 @@
+#navBar {
+  height: 30px; }
+
+.fourButtonChoice {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  background: #555500; }
+
+#windowCont {
+  position: relative;
+  display: flex;
+  flex-flow: column; }
+
+.fourButtonChoice {
+  position: relative; }
+
+.choice {
+  position: absolute;
+  background: #333333; }
+  .choice:hover {
+    background: #292929; }
+  .choice:active {
+    background: #1f1f1f; }
+
+.choice1 {
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 50%; }
+
+.choice2 {
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 50%; }
+
+.choice3 {
+  top: 50%;
+  left: 0;
+  right: 50%;
+  bottom: 0; }
+
+.choice4 {
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=splash.css.map */
